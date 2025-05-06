@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | ProtoLab</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        color: #ffffff;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: #1e1e1e;
+      }
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+      }
+      .nav-links li a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      .nav-links li a:hover {
+        color: #00adb5;
+      }
+      .gallery {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        gap: 3rem;
+      }
+      .project {
+        background-color: #1a1a1a;
+        padding: 1rem;
+        border-radius: 8px;
+      }
+      .project img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 8px;
+      }
+      .project h2 {
+        margin-top: 0.5rem;
+        color: #00adb5;
+      }
+      .project p {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+      }
+      footer {
+        text-align: center;
+        padding: 1rem;
+        background-color: #1e1e1e;
+        font-size: 0.875rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">ProtoLab</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Consult</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="gallery">
+        <div class="project">
+          <img src="/mnt/data/IMG_1593.jpg" alt="3D Character Prototype" />
+          <h2>3D Printed Warrior Character</h2>
+          <p>
+            Multicolor print using PLA layers. Designed for a tabletop board
+            game.
+          </p>
+        </div>
+        <div class="project">
+          <img src="/mnt/data/IMG_1592.jpg" alt="Red Monster Character" />
+          <h2>3D Printed Monster Figurine</h2>
+          <p>Custom designed and color-tuned for a cartoon mascot prototype.</p>
+        </div>
+        <div class="project">
+          <img src="/mnt/data/IMG_1591.jpg" alt="Character Duo" />
+          <h2>Action Scene Duo</h2>
+          <p>
+            Printed duo setup to showcase interactive character positioning for
+            demo kits.
+          </p>
+        </div>
+        <div class="project">
+          <img src="/mnt/data/IMG_1555.jpg" alt="LED Tray Design" />
+          <h2>LED Tray Organizer</h2>
+          <p>
+            Designed for modular parts storage. Precision printed with matte
+            black filament.
+          </p>
+        </div>
+        <div class="project">
+          <img src="/mnt/data/IMG_1554.jpg" alt="Animal Icon Tray Set" />
+          <h2>Custom Animal Tray System</h2>
+          <p>
+            Bear and otter-themed tray organizers for a playful yet functional
+            desktop setup.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 ProtoLab. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

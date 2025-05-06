@@ -1,0 +1,19 @@
+3. Set Your Environment Variables
+
+In your terminal or .env:
+
+export EMAIL_SENDER="your@gmail.com"
+export EMAIL_PASSWORD="your_app_password"
+export EMAIL_RECEIVER="your@gmail.com"
+
+4. Update Your HTML Form
+
+Change the form action in contact.html:
+
+<form action="/submit" method="POST">
+
+5. Run Your Flask App
+
+flask run
+
+Then visit: http://localhost:5000/contact.html
