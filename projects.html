@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects | DerivativeSolutions</title>
+
+    <!-- Lightbox2 CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+
     <style>
       body {
         margin: 0;
@@ -45,11 +58,22 @@
         background-color: #1a1a1a;
         padding: 1rem;
         border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      }
+      .project-images {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
       }
       .project img {
         width: 100%;
-        max-width: 600px;
+        max-width: 300px;
         border-radius: 8px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+      .project img:hover {
+        transform: scale(1.05);
       }
       .project h2 {
         margin-top: 0.5rem;
@@ -67,6 +91,7 @@
       }
     </style>
   </head>
+
   <body>
     <header>
       <nav>
@@ -81,39 +106,127 @@
 
     <main>
       <section class="gallery">
-        <div class="project">
-          <img src="images/peccy_the_slayer.jpg" alt="3D Character Prototype" />
+        <div class="project" data-aos="fade-up">
           <h2>3D Printed Warrior Character</h2>
           <p>
             Multicolor print using PLA layers. Designed for a tabletop board
             game.
           </p>
+          <div class="project-images">
+            <a
+              href="images/peccy_the_slayer.jpg"
+              data-lightbox="warrior"
+              data-title="Front View"
+            >
+              <img
+                src="images/peccy_the_slayer.jpg"
+                alt="3D Character Prototype"
+              />
+            </a>
+            <a
+              href="images/peccy_the_slayer_2.jpg"
+              data-lightbox="warrior"
+              data-title="Back View"
+            >
+              <img
+                src="images/peccy_the_slayer_2.jpg"
+                alt="3D Character Back View"
+              />
+            </a>
+          </div>
         </div>
-        <div class="project">
-          <img src="images/jam_monster.jpg" alt="Red Monster Character" />
+
+        <div class="project" data-aos="fade-up">
           <h2>3D Printed Monster Figurine</h2>
           <p>Custom designed and color-tuned for a cartoon mascot prototype.</p>
+          <div class="project-images">
+            <a
+              href="images/jam_monster.jpg"
+              data-lightbox="monster"
+              data-title="Monster Front"
+            >
+              <img src="images/jam_monster.jpg" alt="Red Monster Character" />
+            </a>
+            <a
+              href="images/jam_monster_2.jpg"
+              data-lightbox="monster"
+              data-title="Monster Side"
+            >
+              <img src="images/jam_monster_2.jpg" alt="Monster Side View" />
+            </a>
+          </div>
         </div>
-        <div class="project">
-          <img src="images/otter_headphone_stand.jpg" alt="Character Duo" />
-          <h2>Otter stand</h2>
-          <p>
-            Printed otter that is hand painted and designed to be used as a
-            headphone stand.
-          </p>
+
+        <div class="project" data-aos="fade-up">
+          <h2>Otter Headphone Stand</h2>
+          <p>Printed otter, hand painted and designed as a headphone stand.</p>
+          <div class="project-images">
+            <a
+              href="images/otter_headphone_stand.jpg"
+              data-lightbox="otter"
+              data-title="Otter Stand Front"
+            >
+              <img src="images/otter_headphone_stand.jpg" alt="Character Duo" />
+            </a>
+            <a
+              href="images/otter_headphone_stand_2.jpg"
+              data-lightbox="otter"
+              data-title="Otter Stand Side"
+            >
+              <img
+                src="images/otter_headphone_stand_2.jpg"
+                alt="Character Side"
+              />
+            </a>
+          </div>
         </div>
-        <div class="project">
-          <img src="images/boxes.jpg" alt="LED Tray Design" />
-          <h2>Tool box Organizer</h2>
+
+        <div class="project" data-aos="fade-up">
+          <h2>Toolbox Organizer</h2>
           <p>
             Designed for modular parts storage. Precision printed with matte
             black filament.
           </p>
+          <div class="project-images">
+            <a
+              href="images/boxes.jpg"
+              data-lightbox="organizer"
+              data-title="Box Layout"
+            >
+              <img src="images/boxes.jpg" alt="LED Tray Design" />
+            </a>
+            <a
+              href="images/boxes_2.jpg"
+              data-lightbox="organizer"
+              data-title="Filled Boxes"
+            >
+              <img src="images/boxes_2.jpg" alt="Boxes Full" />
+            </a>
+          </div>
         </div>
-        <div class="project">
-          <img src="images/cat_phone_charger.jpg" alt="Animal Icon Tray Set" />
-          <h2>Phone stand</h2>
-          <p>Cat themed phone stand with wireless charger.</p>
+
+        <div class="project" data-aos="fade-up">
+          <h2>Cat Phone Stand</h2>
+          <p>Cat themed phone stand with integrated wireless charger.</p>
+          <div class="project-images">
+            <a
+              href="images/cat_phone_charger.jpg"
+              data-lightbox="phone"
+              data-title="Front View"
+            >
+              <img
+                src="images/cat_phone_charger.jpg"
+                alt="Animal Icon Tray Set"
+              />
+            </a>
+            <a
+              href="images/cat_phone_charger_2.jpg"
+              data-lightbox="phone"
+              data-title="Charging Side View"
+            >
+              <img src="images/cat_phone_charger_2.jpg" alt="Charger Side" />
+            </a>
+          </div>
         </div>
       </section>
     </main>
@@ -121,5 +234,17 @@
     <footer>
       <p>&copy; 2025 DerivativeSolutions. All rights reserved.</p>
     </footer>
+
+    <!-- Lightbox2 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+    <!-- AOS Animation JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration
+        once: true, // Animate only once
+      });
+    </script>
   </body>
 </html>
