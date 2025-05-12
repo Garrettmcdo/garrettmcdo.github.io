@@ -238,8 +238,28 @@
     <!-- Lightbox2 JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
-    <!-- AOS Animation JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+    <script>
+      lightbox.option({
+        resizeDuration: 200,
+        wrapAround: true,
+        alwaysShowNavOnTouchDevices: true,
+        disableScrolling: true,
+        fadeDuration: 300,
+        imageFadeDuration: 300,
+        albumLabel: "Image %1 of %2",
+        showImageNumberLabel: false,
+      });
+
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+
+    <!-- AOS Animation JS -->
+
     <script>
       AOS.init({
         duration: 1000, // Animation duration
